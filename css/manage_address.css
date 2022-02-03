@@ -1,0 +1,299 @@
+body {
+    background-image: url(../img/pexels-rodnae-productions-6413577.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#warning_name, #warning_city, #warning_street, #warning_postal_code, #warning_phone {
+    color: #FF0000;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.contents > .title {
+    position: absolute;
+    z-index: 10;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents > .title div:first-child {
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 96px;
+    /* identical to box height, or 52% */
+    /* text-align: center; */
+    color: #FFFFFF;
+}
+
+.contents > .title div:last-child {
+    background: #D9894A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    width: 25rem;
+    height: 78.07px;
+    /* or 28% */
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.contents > .title div:last-child a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.contents > .title div:last-child:hover {
+    transform: scale(1.1);
+}
+
+.address-list .address-box svg:hover {
+    opacity: 100%;
+    transform: scale(1.5);
+}
+
+
+/**/
+
+.address-list {
+    background-color: #FAF2DF;
+    width: 100%;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+.address-list .address-box {
+    width: 500px;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+
+.address-list .address-box .title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+
+.address-list .address-box .contents {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.address-list .address-box .buttons input {
+    border-radius: 5px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.address-list .address-box .buttons input:first-child {
+    background: #625857;
+}
+
+.address-list .address-box .buttons input:last-child {
+    background: #D9894A;
+}
+
+.address-list .address-box svg {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 50%;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+/**/
+
+.add_address_model {
+    position: absolute;
+    z-index: 20;
+    top: 10%;
+    left: 40%;
+    width: 50%;
+    background: #484242;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.add_address_model span {
+    float: right;
+    margin: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input_form .title {
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.input_form .info {
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 28% */
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    color: #EFC39B;
+}
+
+.input_form hr {
+    border: 2px solid #EFC39B;
+    margin-left: 2rem;
+    margin-right: 0;
+}
+
+.input_form label {
+    font-size: 24px;
+    line-height: 24px;
+    /* or 42% */
+    color: #FFFFFF;
+}
+
+.input_form .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.input_form .list div:not(:last-child) label {
+    margin-top: 10px;
+}
+
+.input_form .list input[type="button"] {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #D9894A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 42% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input_form .list input[type="text"] {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.address-list {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-position: top;
+        background-color: #FAF2DF;
+    }
+
+    #title div:first-child {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    #title div:last-child {
+        font-size: 1.5rem;
+        width: 16rem;
+        height: 50.07px;
+        padding-top: 3px;
+    }
+
+    .address-list {
+        margin-top: 20vh;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .address-list .address-box {
+        width: 359px;
+        height: 283px;
+    }
+
+    /* body,
+    header,
+    footer {
+        overflow: hidden;
+    } */
+    .add_address_model {
+        top: 8%;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        overflow: auto;
+    }
+
+    footer {
+        z-index: 30;
+    }
+
+    .input_form .title {
+        font-size: 36px;
+    }
+
+    .input_form .info {
+        font-size: 24px;
+    }
+
+    .address-list {
+        font-size: 18px;
+        padding: 20px;
+    }
+}

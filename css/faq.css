@@ -1,0 +1,152 @@
+body,
+header,
+footer {
+  overflow: hidden;
+}
+
+.faq_background {
+  position: absolute;
+  height: 87vh;
+  overflow: auto;
+}
+
+.faq_background img {
+  width: 100vw;
+}
+
+.img2 {
+  display: none;
+}
+.question_background {
+  background-color: #484343;
+  width: auto;
+  /* height: 890px; */
+}
+
+h3 {
+  font-family: Work Sans;
+  font-size: 64px;
+  color: #fbc98e;
+  font-style: bold;
+  text-align: center;
+  padding-top: 22px;
+}
+
+p.accordion {
+  background-color: #484343;
+  color: white;
+  cursor: pointer;
+  padding-left: 200px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  font-family: Work Sans;
+  font-size: 36px;
+  font-style: bold;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+p.accordion.active,
+p.accordion:hover {
+  background-color: #484843;
+}
+
+/* Unicode character for "plus" sign (+) */
+
+p.accordion:after {
+  content: "\002B";
+  font-size: 30px;
+  color: white;
+  float: left;
+  margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+
+p.accordion.active:after {
+  content: "\002D";
+}
+
+div.panel {
+  padding: 0 18px;
+  background-color: #484343;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 300px;
+  font-family: Work Sans;
+  font-size: 20px;
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .faq_title {
+    font-family: Work Sans;
+    font-size: 30px;
+    color: #fbc98e;
+    font-style: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  p.accordion {
+    background-color: #484343;
+    color: white;
+    transition: 0.4s;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: bold;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  div.panel.show {
+    font-family: Work Sans;
+    font-size: 15px;
+    color: white;
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+  /* Unicode character for "plus" sign (+) */
+
+  p.accordion:after {
+    content: "\002B";
+    font-size: 20px;
+    color: white;
+    float: left;
+    margin-left: 5px;
+  }
+
+  /* Unicode character for "minus" sign (-) */
+
+  p.accordion.active:after {
+    content: "\002D";
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+  }
+
+  .question_background {
+    background-color: #484343;
+    width: auto;
+    height: 100vh;
+  }
+}

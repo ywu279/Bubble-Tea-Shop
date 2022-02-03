@@ -1,0 +1,173 @@
+.cartHeader {
+  font-family: work sans;
+  font-weight: bold;
+  font-size: 72px;
+  color: #aa7766;
+  padding-left: 5vw;
+  padding-top: 3vw;
+}
+
+.products-container {
+  justify-content: space-around;
+  margin: 0 auto;
+  font-family: work sans;
+  font-weight: regular;
+  font-size: 36px;
+  color: #000000;
+  padding-left: 5vw;
+}
+
+.products-header {
+  font-size: 36px;
+  display: flex;
+  justify-content:stretch;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.products {
+  display: table-row-group;
+}
+
+.oneline {
+  font-size: 18px;
+  display: flex;
+  justify-content:stretch;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.products-title {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.products {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+  padding: 10px 0;
+
+}
+
+.sum {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0
+}
+
+/* .products {
+  font-family: work sans;
+  font-weight: regular;
+  font-size: 36px;
+  color: #000000;
+  list-style-type: none;
+  margin-left: 5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  display: flex;
+} */
+
+
+.sum {
+  font-family: work sans;
+  font-weight: regular;
+  font-size: 36px;
+  text-align: right;
+  padding-right: 100px;
+  
+}
+
+.tax {
+  font-family: work sans;
+  font-weight: regular;
+  font-size: 36px;
+  color: #a6a6a6;
+  margin-left: 45vw;
+  width: 70vw;
+}
+button {
+  background-color: #625857;
+  color: white;
+  font-family: work sans;
+  font-weight: bold;
+  font-size: 36px;
+  border-radius: 5px;
+  margin-left: 80vw;
+}
+
+.amount {
+  margin-left: 50vw;
+}
+
+/* .price {
+  margin-left: 10vw;
+} */
+@media screen and (max-width: 600px) {
+  .cartHeader {
+    font-family: work sans;
+    font-weight: bold;
+    font-size: 36px;
+    color: #aa7766;
+    padding-left: 5vw;
+    padding-top: 3vw;
+  }
+
+  .tax {
+    font-family: work sans;
+    font-weight: regular;
+    font-size: 18px;
+    color: #a6a6a6;
+    margin-left: 15vw;
+    width: 80vw;
+  }
+
+  button {
+    background-color: #625857;
+    color: white;
+    font-family: work sans;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-left: 65vw;
+  }
+
+  /* .products {
+    font-family: work sans;
+    font-weight: regular;
+    font-size: 24px;
+    color: #000000;
+    list-style-type: none;
+  } */
+  .amount {
+    margin-left: 20vw;
+  }
+
+  /* .price {
+    margin-left: 5vw;
+  } */
+}

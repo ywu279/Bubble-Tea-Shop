@@ -1,0 +1,228 @@
+.checkoutHeader {
+    color: black;
+    font-family: work sans;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin: 2vh;
+}
+
+#cardErr,
+#dateErr,
+#cvvErr,
+#nameErr,
+#termErr {
+    visibility: hidden;
+}
+
+.spacer {
+    height: 100px;
+}
+
+form {
+    color: black;
+    font-family: work sans;
+    font-weight: regular;
+    font-size: 30px;
+    text-align: left;
+    width: 60vw;
+    border-style: solid;
+    margin-left: 20vw;
+    border-color: #c9c9c9;
+    border-radius: 10px;
+    padding-top: 2vh;
+    margin-top: 1rem;
+    padding-left: 5vw;
+}
+
+legend {
+    color: black;
+    font-family: work sans;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding-left: 2vw;
+}
+
+.card {
+    border-style: none;
+    width: 50vw;
+    display: inline;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.payment {
+    margin-right: 2vw;
+}
+
+.label {
+    margin-left: 0vw;
+}
+
+button {
+    background-color: #625857;
+    color: white;
+    font-family: work sans;
+    font-weight: bold;
+    font-size: 36px;
+    border-radius: 5px;
+    margin-left: 70vw;
+    margin-top: 2vh;
+}
+
+span {
+    color: red;
+    font-family: work sans;
+    font-size: 20px;
+}
+
+
+/**/
+
+.processing>span {
+    float: right;
+    margin: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.processing {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff000;
+    border-right: 3px solid #fff000;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+.ring>span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.ring>span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff000;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #fff000;
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        background-color: #625857;
+        color: white;
+        font-family: work sans;
+        font-weight: bold;
+        font-size: 24px;
+        border-radius: 5px;
+        margin-left: 65vw;
+    }
+    legend {
+        color: black;
+        font-family: work sans;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 1vw;
+    }
+    .payment {
+        height: 3vh;
+    }
+    form {
+        color: black;
+        font-family: work sans;
+        font-weight: regular;
+        font-size: 18px;
+        text-align: left;
+        width: 90vw;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        border-color: #c9c9c9;
+        border-radius: 10px;
+        padding-left: 2vw;
+    }
+    span {
+        color: red;
+        font-family: work sans;
+        font-size: 16px;
+    }
+    label {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    input {
+        padding-top: 0;
+    }
+}

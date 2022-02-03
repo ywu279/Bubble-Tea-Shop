@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Roboto&family=Spartan&family=Waiting+for+the+Sunrise&family=Work+Sans:wght@100..900&display=swap");
+:root {
+    --menu_height: 68px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #625857;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    z-index: 99;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* opacity: 0%; */
+}
+
+header nav {
+    display: flex;
+}
+
+header ul,
+.mobile_menu ul {
+    list-style: none;
+}
+
+header ul li,
+.mobile_menu li {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+header ul {
+    margin: 0;
+    margin-left: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+header ul li {
+    text-align: center;
+    line-height: var(--menu_height);
+    height: var(--menu_height);
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+header ul li:hover,
+.mobile_menu li:hover {
+    background-color: #a48d7d;
+    color: white;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+}
+
+
+/*logo*/
+
+header nav>span:first-child {
+    background-color: #a48d7d;
+    cursor: pointer;
+}
+
+header nav>span:first-child>img {
+    width: var(--menu_height);
+    height: var(--menu_height);
+}
+
+
+/*icon*/
+
+header nav>span:last-child {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+header nav>span:last-child>span>img,
+header nav>span:last-child>span>svg {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/*show/hide*/
+
+header .responsive_list,
+header .responsive_menu li:first-child {
+    display: none;
+}
+
+
+/*------*/
+
+main .mobile_menu {
+    position: fixed;
+    top: 65px;
+    z-index: 50;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: none;
+}
+
+main ul {
+    margin-top: 1em;
+    padding-left: 0;
+}
+
+main ul li {
+    padding-left: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    height: 27px;
+    color: #000000;
+}
+
+main ul li:not(:last-child) {
+    /* border-bottom: 1px solid #CFCFCF; */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 69px;
+    width: 100%;
+    background-color: #353432;
+}
+
+footer div {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive_header {
+        font-size: 24px;
+        color: #625857;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    header .responsive_menu {
+        margin-left: 0;
+        flex-direction: column;
+        width: 50%;
+    }
+    header .responsive_icon {
+        margin-left: auto;
+        align-items: flex-end;
+    }
+    #responsive_icon>span>img,
+    #responsive_icon>span>svg {
+        width: 30px;
+        height: 30px;
+    }
+    header .responsive_list,
+    header .responsive_menu li:first-child {
+        display: block;
+    }
+    header nav>span:first-child,
+    header ul li:not(:first-child) {
+        display: none;
+    }
+    .responsive_menu li:hover {
+        transform: none;
+    }
+    #responsive_footer {
+        height: 100px;
+    }
+    .responsive_footer div {
+        top: 30%;
+        left: 25%;
+        width: 52%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
