@@ -1,5 +1,6 @@
 # Bubble Tea Shop Responsive Website
-To implement a responsive web application that is best viewable by phones and desktop computers, we built an online bubble tea shop website that customers can place their orders online and go check out.
+The purpose of the project is to implement a responsive web application that is best viewable by phones and desktop computers. An online bubble tea shop website is built that customers can place their orders online and go check out.
+<*CST8117 Cross-Platform Web Design - Final Group Assignment*>
 
 ## Features
 - Showcase of drinks with responsive layouts (mobile `max-width:600px`)
@@ -7,14 +8,19 @@ To implement a responsive web application that is best viewable by phones and de
 - JavaScript form validation at checkout page
 - Cookie support
 
-- Design: Website Flowchart, Desktop&Mobile mockups by Figma, CSS style guide
-
 ## Built with
 - [Bootstrap framework](https://getbootstrap.com)
 - [JQuery library](https://jquery.com)
 
 ## Style Guide
+More information can be found in [CSS details_Desktop and Mobile.xlsx](https://ywu279/bubble-tea-shop/blob/main/design/CSS%20details_Desktop%20and%20Mobile.xlsx)
 ![CSS_guide](https://user-images.githubusercontent.com/58931129/162600235-ac176d26-4232-4a7e-a8a6-a70c881d587b.png)
+
+## Usage (Landing page screenshot)
+![Desktop_home_all](https://user-images.githubusercontent.com/58931129/167335574-14b4bc11-237f-4826-ad26-735a496712db.png)
+
+## Roadmap
+![flowchart draw io](https://user-images.githubusercontent.com/58931129/167335781-687a502f-2c5f-4a12-be1d-40b4fd3d6b53.png)
 
 ## Contributing
 Any contributions are greatly appreciated. If you have a suggestion that would make this better, please fork the repo and create a pull request. Don't forget to give the project a star! Thanks again! :star2:
@@ -34,7 +40,8 @@ Any contributions are greatly appreciated. If you have a suggestion that would m
 - [Yee Hin West Wong](mailto:wong0336@algonquinlive.com)
 
 ## Acknowledgements
-A list of recourses I found helpful and would like to give credit to
-......
+A list of recourses I found helpful and would like to give credit to:
+- [Pexels](https://www.pexels.com/)
+- [Font Awesome](https://fontawesome.com/)
 
-<*CST8117 Cross-Platform Web Design - Final Group Assignment*>
+
