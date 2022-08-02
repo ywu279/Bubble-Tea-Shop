@@ -1,7 +1,6 @@
 # Bubble Tea Shop Responsive Website
 The purpose of the project is to implement a responsive web application that is best viewable by phones and desktop computers. An online bubble tea shop website is built that customers can place their orders online and go check out. 
-
-This website is published at https://ywu279.github.io/bubble-tea-shop/
+<br><h3>[View Live Demo](https://ywu279.github.io/bubble-tea-shop/)</h3>
 
 <*CST8117 Cross-Platform Web Design - Final Group Assignment*>
 
